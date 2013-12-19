@@ -1,0 +1,1 @@
+xsd.exe /classes /namespace:OpenOSC OutlookSocialProvider_1.1.xsd
