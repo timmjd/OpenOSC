@@ -29,30 +29,30 @@ namespace OpenOSC
       {
         var caps = new capabilities
         {
-          // OSC 1.0 capabilities
+          // OSC 1.0
           getFriends = true,
           cacheFriends = true,
-
           followPerson = false,
           doNotFollowPerson = false,
           getActivities = true,
           cacheActivities = false,
-
-          // OSC 1.1 capabilities
-          dynamicActivitiesLookupEx = false,
-          dynamicActivitiesLookupExSpecified = true,
+          dynamicActivitiesLookup = false,
+          displayUrl = false,
+          // useLogonWebAuth = true, 
           hideHyperlinks = false,
-          hideHyperlinksSpecified = true,
           supportsAutoConfigure = false,
-          supportsAutoConfigureSpecified = true,
-          dynamicContactsLookup = true,
-          dynamicContactsLookupSpecified = true,
+          // contactSyncRestartInterval = 10,
 
+          // OSC 1.1
+          // dynamicActivitiesLookupEx = false,
+          // dynamicContactsLookup = true,
           useLogonCached = false,
-          useLogonCachedSpecified = false,
           hideRememberMyPassword = false,
-          hideRememberMyPasswordSpecified = false,
-          hashFunction = "MD5"
+          createAccountUrl = "https://accounts.google.com/SignUp",
+          forgotPasswordUrl = "https://www.google.com/accounts/recovery",
+          // showOnDemandActivitiesWhenMinimized = false,
+          // showOnDemandContactsWhenMinimized = false,
+          // hashFunction = "MD5"
         };
 
         return Helper.xmlToString(caps);
@@ -94,7 +94,7 @@ namespace OpenOSC
       {
         get
         {
-          return "Google+";
+          return "Google";
         }
       }
 
